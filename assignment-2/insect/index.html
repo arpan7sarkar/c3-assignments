@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Third Party Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Instrument+Serif:ital@0;1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Insect - Assignment 2</title>
+</head>
+<body>
+    <!-- App Main Container -->
+    <div class="app-container">
+        
+        <!-- Split View Layout -->
+        <main class="split-layout">
+            
+            <!-- Left Panel (Light) -->
+            <section class="split-layout__panel split-layout__panel--light">
+                
+                <!-- Left Top Navigation -->
+                <nav class="top-nav">
+                    <h1 class="top-nav__brand">INSECT</h1>
+                    <div class="search-bar">
+                        <i class="ri-search-line search-bar__icon"></i>
+                        <input type="search" placeholder="Search" class="search-bar__input">
+                    </div>
+                </nav>
+
+                <!-- Classification Details Panel -->
+                <div class="classification-panel">
+                    <h1 class="classification-panel__title">Classification</h1>
+
+                    <div class="classification-list">
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Class:</h4>
+                        <h5 class="classification-list__value">Insect</h5>
+                        <div class="classification-list__divider"></div>
+
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Order:</h4>
+                        <h5 class="classification-list__value">Coleoptera</h5>
+                        <div class="classification-list__divider"></div>
+
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Family:</h4>
+                        <h5 class="classification-list__value">Cerambycidae</h5>
+                        <div class="classification-list__divider"></div>
+
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Sub-Family:</h4>
+                        <h5 class="classification-list__value">Cerambycinae</h5>
+                        <div class="classification-list__divider"></div>
+
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Tribe:</h4>
+                        <h5 class="classification-list__value">Collicromatini</h5>
+                        <div class="classification-list__divider"></div>
+
+                        <h4 class="classification-list__label"><div class="classification-list__indicator"></div> Genus:</h4>
+                        <h5 class="classification-list__value">Pachyteria</h5>
+                    </div>
+                    
+                </div>
+                
+                <!-- Hero Insect Graphic -->
+                <img src="public/hero-insect-large.png" alt="Large Insect Graphic" class="hero-graphic">
+            </section>
+            
+            <!-- Right Panel (Dark) -->
+            <section class="split-layout__panel split-layout__panel--dark">
+                
+                <!-- Right Top Navigation -->
+                <nav class="top-nav top-nav--dark">
+                    <a href="#" class="top-nav__link">Home</a>
+                    <a href="#" class="top-nav__link">Shop</a>
+                    <a href="#" class="top-nav__link">About</a>
+                    <a href="#" class="top-nav__link">Gallery</a>
+                    <a href="#" class="top-nav__link">Contact</a>
+                </nav>
+
+                <!-- Product Information Details -->
+                <div class="product-details">
+                    <h1 class="product-details__title">Pachyteria</h1>
+                    <h1 class="product-details__title">equestris</h1>
+
+                    <!-- Spec Box Details -->
+                    <div class="specs-box">
+                        <img src="public/detail-insect-small.jpg" alt="Miniature View" class="specs-box__image">
+                        <div class="specs-box__divider"></div>
+                        <div class="specs-box__info">
+                            <div class="specs-box__icons">
+                                <i class="ri-map-pin-2-fill specs-box__icon"></i>
+                                <i class="ri-men-line specs-box__icon"></i>
+                                <i class="ri-ruler-line specs-box__icon"></i>
+                            </div>
+                            <div class="specs-box__text">
+                                <h4 class="specs-box__label">Locality: <br> Malaysia</h4>
+                                <h4 class="specs-box__label">Sex: <br> Male</h4>
+                                <h4 class="specs-box__label">Size: <br> 32mm / 12mm</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pricing & Toggles -->
+                    <div class="pricing-panel">
+                        <h2 class="pricing-panel__price">$5.99</h2>
+
+                        <h4 class="pricing-panel__option">
+                            <button class="toggle-switch"><div class="toggle-switch__thumb"></div></button> 
+                            View detailed antennae
+                        </h4>
+                        <h4 class="pricing-panel__option">
+                            <button class="toggle-switch"><div class="toggle-switch__thumb"></div></button> 
+                            View underside
+                        </h4>
+                    </div>
+
+                </div>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>

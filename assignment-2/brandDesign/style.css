@@ -1,0 +1,205 @@
+/* =========================================
+   Base Resets & Globals
+   ========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background-color: #f2f0ec;
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* =========================================
+   Layout Containers
+   ========================================= */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 8vw;
+  width: 100%;
+}
+
+/* =========================================
+   Top Navigation
+   ========================================= */
+.top-navbar {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 4vw;
+}
+
+.top-navbar__icon {
+  flex: 1;
+}
+
+.top-navbar__icon img {
+  height: 8vw;
+  width: auto;
+}
+
+.top-navbar__brand {
+  color: #6b0b13;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  font-size: 4.5vw;
+  font-weight: 500;
+  letter-spacing: -0.2vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.top-navbar__brand-line--first {
+}
+
+.top-navbar__brand-line--second {
+  align-items: center;
+  display: flex;
+  gap: 1vw;
+}
+
+.top-navbar__brand-image {
+  border-radius: 5vw;
+  height: 4.5vw;
+  object-fit: cover;
+  width: 8vw;
+}
+
+.top-navbar__slogan {
+  color: #6a6361;
+  flex: 1;
+  font-size: 0.9vw;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   Main Content & Hero Typography
+   ========================================= */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 4vw;
+}
+
+.hero-typography {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 18vw;
+}
+
+.hero-typography__headline {
+  color: #6b0b13;
+  display: flex;
+  flex-direction: column;
+  font-size: 4.5vw;
+  font-weight: 500;
+  letter-spacing: -0.2vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.hero-typography__line--muted {
+  color: #a09997;
+}
+
+.hero-typography__line--primary {
+}
+
+.hero-typography__description {
+  color: #554847;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 1.5vw;
+}
+
+/* =========================================
+   Project Gallery
+   ========================================= */
+.project-gallery {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 6vw;
+  width: 100%;
+}
+
+.project-gallery__heading {
+  color: #6b0b13;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2vw;
+  font-weight: 500;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.project-gallery__heading span {
+  border-bottom: 0.1vw solid #6b0b13;
+  padding-bottom: 0.2vw;
+  width: max-content;
+}
+
+.project-gallery__grid {
+  display: flex;
+  gap: 1.5vw;
+}
+
+.project-gallery__image {
+  border-radius: 1vw;
+  height: 25vh;
+  object-fit: cover;
+  width: 25vh;
+}
+
+/* =========================================
+   Site Footer
+   ========================================= */
+.site-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vw;
+}
+
+.site-footer__headline {
+  color: #6b0b13;
+  display: flex;
+  flex-direction: column;
+  font-size: 4vw;
+  font-weight: 500;
+  letter-spacing: -0.2vw;
+  line-height: 0.9;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.site-footer__line--first {
+}
+
+.site-footer__line--second {
+}
+
+.site-footer__text--muted {
+  color: #a09997;
+}
+
+.site-footer__description {
+  color: #554847;
+  font-size: 0.8vw;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-top: 2vw;
+  text-align: center;
+}
