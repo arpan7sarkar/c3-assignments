@@ -1,0 +1,105 @@
+/* Globals */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: opensans;
+  src: url("../fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.hero-banner--primary {
+  background-color: #fbc50b;
+  font-family: opensans;
+  height: 100%;
+  width: 60%;
+}
+
+.hero-banner--secondary {
+  background-color: #fbe8b5;
+  height: 100%;
+  width: 40%;
+}
+
+/* Typography & Content */
+.brand-logo {
+  margin: 0px 50px;
+}
+
+.hero-content {
+  margin: 10px 50px;
+}
+
+.hero-content__subtitle {
+  font-size: small;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.hero-content__title-wrapper {
+  font-size: 55px;
+}
+
+.hero-content__description {
+  color: #4b3901;
+  font-size: medium;
+  font-weight: 400;
+}
+
+.hero-content__pagination {
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.hero-content__pagination-line {
+  bottom: 5px;
+  margin-right: 20px;
+  position: relative;
+}
+
+/* Character Graphic */
+.hero-character {
+  bottom: 100px;
+  position: absolute;
+  right: 400px;
+}
+
+/* Menu & Pagination Dots */
+.mobile-menu {
+  left: 420px;
+  position: relative;
+  top: 30px;
+}
+
+.pagination-dot {
+  border-radius: 50%;
+  height: 12px;
+  left: 440px;
+  margin: 15px;
+  position: relative;
+  top: 200px;
+  width: 12px;
+}
+
+.pagination-dot--active {
+  background-color: black;
+}
+
+.pagination-dot--inactive {
+  background-color: yellow;
+}
