@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Third Party Icons & Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Astro Winter - Armor -assignemnt 2</title>
+</head>
+<body>
+    <!-- Main Application Wrapper -->
+    <div class="app-wrapper">
+        
+        <!-- Hero & Product Showcase Section -->
+        <header class="hero-section">
+            
+            <!-- Top Navigation Bar -->
+            <nav class="top-navbar">
+                <div class="top-navbar__group">
+                    <h2 class="top-navbar__brand">ASTRO<span>.</span></h2>
+                    <a href="#">PRODUCTS</a>
+                    <a href="#">CATEGORY</a>
+                    <a href="#">ABOUT</a>
+                    <a href="#">CONTACT</a>
+                </div>
+                <!-- User Actions (Search, Cart, Profile) -->
+                <div class="top-navbar__group">
+                    <i class="ri-search-line"></i>
+                    <i class="ri-shopping-cart-2-line"></i> 
+                    <i class="ri-user-line"></i>
+                </div>
+            </nav>
+
+            <!-- Main Product Display Area -->
+            <div class="product-showcase">
+                
+                <!-- Left Column: Product Information -->
+                <div class="product-showcase__info">
+                    <span>NEW</span>
+                    <h1>ASTRO</h1>
+                    <h1>WINTER</h1>
+                    <h1>ARMOR <span>||</span></h1>
+
+                    <h4>$560</h4>
+
+                    <div class="separator-line"></div>
+
+                    <!-- Product Description -->
+                    <h2>DESCRIPTION</h2>
+                    <p>A next-gen jacket. The essence retro style and the resilience you need to face extreme winter conditions. Engineered to provide versatile function for your winter wardrobe, accented with strategic utility details.</p>
+                    <h6>READ MORE <i class="ri-arrow-right-s-line"></i></h6>
+
+                    <div class="separator-line"></div>
+
+                    <!-- Additional Details Toggles -->
+                    <h2>MATERIAL & CARE <i class="ri-arrow-down-s-line"></i></h2>
+                    <div class="separator-line"></div>
+                    <h2>SHIPPING & RETURN <i class="ri-arrow-down-s-line"></i></h2>
+                </div>
+                
+                <!-- Center Column: Primary Product Image -->
+                <div class="product-showcase__image-wrapper">
+                    <img src="public/hero-jacket.webp" alt="Winter Armor Jacket">
+                </div>
+                
+                <!-- Right Column: Product Options & Actions -->
+                <div class="product-showcase__options">
+                    
+                    <!-- Size Selection -->
+                    <h2>SIZE</h2>
+                    <div class="size-selector">
+                        <button class="size-selector__btn">S</button>
+                        <button class="size-selector__btn size-selector__btn--active">M</button>
+                        <button class="size-selector__btn">L</button>
+                        <button class="size-selector__btn">XL</button>
+                    </div>
+                    <h6>SIZE GUIDE <i class="ri-arrow-right-s-line"></i></h6>
+
+                    <div class="separator-line"></div>
+
+                    <!-- Color Selection Grid -->
+                    <h2>COLOR</h2>
+                    <div class="color-picker">
+                        <div class="color-picker__row">
+                            <div class="color-picker__item">
+                                <img style="border: 2px solid #E55F00;" src="public/product-beige.png" alt="Beige Color">
+                                <h5>BEIGE</h5>
+                            </div>
+                            <div class="color-picker__item">
+                                <img src="public/product-red.png" alt="Red Color">
+                                <h5>RED</h5>
+                            </div>
+                        </div>
+                        <div class="color-picker__row">
+                            <div class="color-picker__item">
+                                <img src="public/product-black.png" alt="Black Color">
+                                <h5>BLACK</h5>
+                            </div>
+                            <div class="color-picker__item">
+                                <img src="public/product-white.png" alt="White Color">
+                                <h5>WHITE</h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checkout Actions -->
+                    <button class="btn--wishlist"> <i class="ri-poker-hearts-line"></i> ADD TO WISH</button>
+                    <button class="btn--cart">ADD TO CART <i class="ri-shopping-bag-line"></i></button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Highlights / Features Banner (Middle) -->
+        <section class="features-banner">
+            <div class="features-banner__item">
+                <h1><i class="ri-snowflake-fill"></i> EXTREME WARMTH</h1>
+            </div>
+            <div class="features-banner__item">
+                <h1><i class="ri-shield-flash-line"></i> WIND RESISTANT</h1>
+            </div>
+            <div class="features-banner__item">
+                <h1><i class="ri-leaf-fill"></i> LIGHT WEIGHT</h1>
+            </div>
+        </section>
+
+        <!-- Detailed Specifications Section (Bottom) -->
+        <section class="details-section">
+            
+            <!-- Technical Features Grid -->
+            <div class="feature-grid">
+                <div class="feature-grid__item">
+                    <img src="public/feature-water-repellent.jpg" alt="Water Repellent feature">
+                    <div class="feature-grid__content">
+                        <h1>3X <br> WATER-REPELLENT</h1>
+                        <p>The Fabric repels rain, snow and moisture while keeping you dry and comfortable.</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <img src="public/feature-3d-puffer.jpg" alt="3D Puffer feature">
+                    <div class="feature-grid__content">
+                        <h1>3D AREAS <br> PUFFERED</h1>
+                        <p>Strategically padded zones trap heat and maximize insulation without the bulk.</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <img src="public/feature-insulation.png" alt="Insulation feature">
+                    <div class="feature-grid__content">
+                        <h1>INSULATION</h1>
+                        <p>Advanced thermal filling locks in warmth up to -30C for extreme condition.</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <img src="public/feature-utility-pockets.png" alt="Utility Pockets feature">
+                    <div class="feature-grid__content">
+                        <h1>UTLITY POCKETS</h1>
+                        <p>Multi-function pockets for secure storage on the go.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Material & Build Highlights Bar -->
+            <div class="highlights-bar">
+                <div class="feature-grid__item">
+                    <div class="highlights-bar__icon"><i class="ri-grid-line"></i></div>
+                    <div class="highlights-bar__content">
+                        <h2>PREMIUM FABRIC</h2>
+                        <p>Durable, high-performance materials.</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <div class="highlights-bar__icon"><i class="ri-shield-cross-fill"></i></div>
+                    <div class="highlights-bar__content">
+                        <h2>THERMAL PROTECTION</h2>
+                        <p>Built for extreme winter climates.</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <div class="highlights-bar__icon"><i class="ri-donut-chart-fill"></i></div>
+                    <div class="highlights-bar__content">
+                        <h2>DESIGNED FOR FUNCTION</h2>
+                        <p>Every detail serves a purpose</p>
+                    </div>
+                </div>
+                <div class="feature-grid__item">
+                    <div class="highlights-bar__icon"><i class="ri-star-line"></i></div>
+                    <div class="highlights-bar__content">
+                        <h2>LIMITED EDITION</h2>
+                        <p>Exclusive drops, limited quantities.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Spacer -->
+        <div class="spacer"></div>
+
+    </div>
+</body>
+</html>
