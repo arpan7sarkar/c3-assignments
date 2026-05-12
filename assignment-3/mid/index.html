@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunmall - Assignment Three - Medium</title>
+    <!-- Stylesheet Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cossette+Texte:wght@400;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <!-- Main Application Container -->
+    <div class="app-container">
+      
+      <!-- Top Navigation Bar -->
+      <nav class="header">
+        <div class="header__logo">
+          <img src="./public/sunmall-logo.png" alt="logo" height="80" />
+        </div>
+        <div class="header__navigation">
+          <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>chips</li>
+            <li>services</li>
+            <li>contacts</li>
+          </ul>
+        </div>
+        <div class="header__search">
+          <input type="text" placeholder="Search for chips..." />
+          <span id="header-cart" class="header__cart">
+            <img src="./public/icon-cart.svg" height="20" alt="cart" />
+          </span>
+        </div>
+      </nav>
+
+      <!-- Main Content Area -->
+      <main class="main-content">
+        
+        <!-- Left Section: Product Details -->
+        <div class="product-details">
+          <div class="product-details__badge"><strong>★ 100% real ingredients</strong></div>
+          <div class="product-details__title">
+            Eat our <span style="color: green">grilled</span><br />
+            potato chips
+          </div>
+          <div class="product-details__divider">
+            <img src="./public/accent-underline.png" alt="" />
+          </div>
+          <div class="product-details__description">
+            Satisfying savory Chinese meat sauce chips <br />
+            without any hard-to-find ingredients.
+          </div>
+          
+          <!-- Actions: Add to Cart and Quantity -->
+          <div class="product-details__actions">
+            <div class="action-add-to-cart">
+              <span><img src="./public/basket.svg" alt="" height="20" /></span>
+              <button>Add to cart</button>
+            </div>
+            <div class="action-quantity">
+              <div><strong>➖</strong></div>
+              <div><strong>2</strong></div>
+              <div><strong>➕</strong></div>
+            </div>
+          </div>
+          
+          <!-- Product Specifications -->
+          <div class="product-specs">
+            <div class="product-specs__item">
+              <span class="product-specs__icon">🌿</span>
+              <span class="product-specs__details">
+                <strong>100% natural</strong><br />
+                No articial colors
+              </span>
+            </div>
+            <div class="product-specs__item">
+              <span class="product-specs__icon">🔥</span>
+              <span class="product-specs__details">
+                <strong>Over grilled</strong><br />
+                Not fried
+              </span>
+            </div>
+            <div class="product-specs__item">
+              <span class="product-specs__icon">❤️</span>
+              <span class="product-specs__details">
+                <strong>Tasty & crunchy</strong><br />
+                Irresistable bite
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center Section: Hero Image -->
+        <div class="product-showcase">
+          <img
+            src="./public/hero-product.png"
+            alt="img"
+            height="570"
+            id="hero-product-img"
+            class="product-showcase__img"
+          />
+        </div>
+
+        <!-- Right Section: Ingredients -->
+        <div class="product-ingredients">
+          <div class="ingredient-item">
+            <span class="ingredient-item__icon" style="background-color: green">🌶️</span>
+            <span class="ingredient-item__details">
+              <strong>Extra Chili</strong><br />
+              Zha Jiang mian is crazy hot <br />
+              even when it's simplified
+            </span>
+          </div>
+          <div class="ingredient-item">
+            <span class="ingredient-item__icon" style="background-color: red">🍗</span>
+            <span class="ingredient-item__details">
+              <strong>BEEF FLAVOUR</strong><br />
+              Comes with a lot extra energy <br />
+              calories and Oxízen
+            </span>
+          </div>
+          <div class="ingredient-item">
+            <span class="ingredient-item__icon" style="background-color: yellow">🔥</span>
+            <span class="ingredient-item__details">
+              <strong>SMOKEY SAUCE</strong><br />
+              The meat sauce is kind of <br />
+              reminiscent of a Chinese
+            </span>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer Area -->
+      <footer class="footer">
+        <!-- Footer Left: Title and Navigation -->
+        <div class="footer-header">
+          <div class="footer-header__title">
+            our top
+            <br />
+            flavors
+          </div>
+          <div class="footer-header__nav">
+            <img
+              src="./public/icon-arrow-left.svg"
+              height="40"
+              alt=""
+              class="footer-header__nav-btn"
+            />
+            <img
+              src="./public/icon-arrow-right.svg"
+              height="40"
+              alt=""
+              class="footer-header__nav-btn"
+            />
+          </div>
+        </div>
+        
+        <!-- Footer Right: Product Carousels -->
+        <div class="footer-products">
+          <div class="product-card">
+            <div class="product-card__media">
+              <img src="./public/product-barbeque.png" alt="" height="210" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">black barbeque</div>
+              <div class="product-card__rating">⭐⭐⭐⭐ (4)</div>
+              <div class="product-card__price">$12.30</div>
+              <div class="product-card__button">order now</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__media">
+              <img src="./public/product-potato.png" height="210" alt="" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">mr.potato</div>
+              <div class="product-card__rating">⭐⭐⭐⭐⭐ (5)</div>
+              <div class="product-card__price">$15.89</div>
+              <div class="product-card__button">order now</div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-card__media">
+              <img src="./public/product-tomyumm.png" height="210" alt="" />
+            </div>
+            <div class="product-card__info">
+              <div class="product-card__name">tom yomm</div>
+              <div class="product-card__rating">⭐⭐⭐ (3)</div>
+              <div class="product-card__price">$11.50</div>
+              <div class="product-card__button">order now🠮</div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
