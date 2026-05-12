@@ -1,0 +1,129 @@
+/* Base Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  background: linear-gradient(rgb(1, 1, 36), rgb(156, 7, 7));
+  color: rgb(214, 212, 212);
+  font-family: sans-serif;
+  font-weight: 100;
+  height: 100%;
+  width: 100%;
+}
+
+/* App Wrapper */
+.app-wrapper {
+  background-image: url("./public/bg-hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  padding: 3rem 5%;
+  width: 100%;
+}
+
+/* Header Navigation */
+.header-nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav__navigation-list ul {
+  display: flex;
+  font-size: 1.2rem;
+  gap: 2rem;
+  justify-content: space-between;
+  list-style: none;
+}
+
+.header-nav__navigation-list ul li:hover {
+  border-bottom: 2px solid red;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.hero-info {
+  font-size: 1.2rem;
+}
+
+.hero-info__description {
+  margin: 10px 0;
+}
+
+.hero-actions {
+  display: flex;
+}
+
+.hero-actions__primary,
+.hero-actions__secondary {
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid rgb(131, 128, 128);
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  font-size: 1.1rem;
+  font-weight: 300;
+  gap: 0.8rem;
+  justify-content: center;
+  margin: 2rem 0.5rem 0 0;
+  padding: 1rem 3rem;
+}
+
+.hero-actions__primary:hover,
+.hero-actions__secondary:hover {
+  background: linear-gradient(to right, rgb(142, 3, 119), rgb(195, 128, 3));
+}
+
+.hero-visual img {
+  bottom: 2rem;
+  position: relative;
+  right: 5rem;
+}
+
+/* Clips Gallery (Footer) */
+.clips-gallery {
+  align-items: center;
+  background-color: #530c3d;
+  border-radius: 30px;
+  bottom: 3rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+  padding: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.clip-card {
+  border-radius: 20px;
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.clip-card__thumbnail {
+  border-radius: 20px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+}
+
+.clip-card__play-icon {
+  bottom: 1.5rem;
+  height: auto;
+  position: absolute;
+  right: 1.5rem;
+  width: 40px;
+  z-index: 2;
+}
